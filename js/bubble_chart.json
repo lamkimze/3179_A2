@@ -134,12 +134,13 @@
                     {
                         "field": "GDP per Capita",
                         "type": "quantitative",
-                        "format": ",.2f"
+                        "format": ",.2f",
+                        "title": "GDP per Capita (USD)"
                     },
                     {
                         "field": "Life Expectancy",
                         "type": "quantitative",
-                        "format": ","
+                        "format": ",.2f"
                     }
                 ]
             }
