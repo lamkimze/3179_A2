@@ -43,7 +43,7 @@
         "x": {
             "field": "GDP per Capita",
             "type": "quantitative",
-            "title": "GDP per Capita",
+            "title": "GDP per Capita (USD)",
             "axis": {
                 "tickCount": 5
             },
