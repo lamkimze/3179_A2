@@ -139,7 +139,7 @@
                     {
                         "field": "Life Expectancy",
                         "type": "quantitative",
-                        "format": ",.2f"
+                        "format": ","
                     }
                 ]
             }
