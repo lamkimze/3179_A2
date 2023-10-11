@@ -37,7 +37,6 @@
         {
             "filter": "datum['Population (Million)'] > pop_selected"
         }
-        
     ],
     "encoding": {
         "x": {
@@ -64,7 +63,7 @@
             },
             "scale": {
                 "domain": [
-                    30,
+                    40,
                     90
                 ]
             }
@@ -73,6 +72,18 @@
     "layer": [
         {
             "mark": "circle",
+            "params": [
+                {
+                    "name": "continent_filter",
+                    "select": {
+                        "type": "point",
+                        "fields": [
+                            "Continent"
+                        ]
+                    },
+                    "bind":"legend"
+                }
+            ],
             "encoding": {
                 "size": {
                     "field": "Population (Million)",
@@ -102,24 +113,26 @@
                     "type": "nominal",
                     "scale": {
                         "domain": [
-                            "Americas",
-                            "Europe",
                             "Asia",
                             "Africa",
+                            "Europe",
+                            "North America",
+                            "South America",
                             "Oceania"
                         ],
                         "range": [
                             "#e41a1c",
                             "#984ea3",
                             "#ff7f00",
-                            "#a6cee3",
+                            "#bc6c25",
                             "#377eb8",
                             "#0BDA51"
                         ]
                     }
                 },
                 "opacity": {
-                    "value": 0.6
+                    "condition":{"param": "continent_filter", "value":0.6},
+                    "value": 0
                 },
                 "tooltip": [
                     {
@@ -200,7 +213,7 @@
                     "filter": "datum.Country == 'China'"
                 },
                 {
-                    "calculate": "\"As the fastest growing country in this century, ;China had \"",
+                    "calculate": "\"China had \"",
                     "as": "ChinaLabel"
                 },
                 {
@@ -232,7 +245,7 @@
                     "filter": "datum.Country == 'China'"
                 },
                 {
-                    "calculate": "';improve their economics tremendously '",
+                    "calculate": "'improve their economics tremendously '",
                     "as": "ChinaLabel"
                 },
                 {
@@ -264,7 +277,7 @@
                     "filter": "datum.Country == 'China'"
                 },
                 {
-                    "calculate": "';;Their GDP per Capita had increased to '",
+                    "calculate": "';Their GDP per Capita had increased to '",
                     "as": "ChinaLabel"
                 },
                 {
@@ -296,7 +309,7 @@
                     "filter": "datum.Country == 'China'"
                 },
                 {
-                    "calculate": "';;' + datum['GDP per Capita'] ",
+                    "calculate": "';' + datum['GDP per Capita'] ",
                     "as": "ChinaLabel"
                 },
                 {
@@ -328,7 +341,7 @@
                     "filter": "datum.Country == 'China'"
                 },
                 {
-                    "calculate": "';;; Million USD in ' + year_selected + ' with a rank of '",
+                    "calculate": "';; Million USD in ' + year_selected + ' with a rank of '",
                     "as": "ChinaLabel"
                 },
                 {
@@ -357,14 +370,24 @@
         {
             "transform": [
                 {
-                    "window": [{"op": "rank", "as": "ranking"}],
-                    "sort": [{"field": "GDP per Capita", "order": "descending"}]
-                  },
+                    "window": [
+                        {
+                            "op": "rank",
+                            "as": "ranking"
+                        }
+                    ],
+                    "sort": [
+                        {
+                            "field": "GDP per Capita",
+                            "order": "descending"
+                        }
+                    ]
+                },
                 {
                     "filter": "datum.Country == 'China'"
                 },
                 {
-                    "calculate": "';;;' + datum.ranking",
+                    "calculate": "';;' + datum.ranking",
                     "as": "contLabel"
                 },
                 {
@@ -396,7 +419,7 @@
                     "filter": "datum.Country == 'China'"
                 },
                 {
-                    "calculate": "';;;in global '",
+                    "calculate": "';;in global '",
                     "as": "contLabel"
                 },
                 {
@@ -428,7 +451,7 @@
                     "filter": "datum.Country == 'China'"
                 },
                 {
-                    "calculate": "';;;; GDP per Capita.'",
+                    "calculate": "';;; GDP per Capita.'",
                     "as": "contLabel"
                 },
                 {
@@ -455,16 +478,12 @@
             }
         },
         {
-            "transform":[
+            "transform": [
                 {
                     "filter": "datum.Country == 'United States of America'"
                 },
                 {
-                    "calculate": "datum.Country + ' tend to be very '",
-                    "as": "USAlabel"
-                },
-                {
-                    "calculate": "split(datum.USAlabel, ';')",
+                    "calculate": "datum.Country ",
                     "as": "USAlabelL"
                 }
             ],
@@ -472,8 +491,8 @@
                 "type": "text",
                 "align": "left",
                 "baseline": "middle",
-                "dy": 100,
-                "dx": -150,
+                "dy": 30,
+                "dx": -50,
                 "fontSize": 15,
                 "fontStyle": "san-serif"
             },
@@ -485,44 +504,77 @@
                     "value": "black"
                 }
             }
-            
-        },
-        {
-            "transform":[
+        }, {
+            "transform": [
                 {
                     "filter": "datum.Country == 'United States of America'"
                 },
                 {
-                    "calculate": "'stable'",
+                    "calculate": "'; tend to have' ",
                     "as": "USAlabel"
+                },
+                {
+                    "calculate": "split(datum.USAlabel, ';')",
+                    "as": "USAlabelL"
                 }
             ],
             "mark": {
                 "type": "text",
                 "align": "left",
                 "baseline": "middle",
-                "dy": 100,
-                "dx": 35,
+                "dy": 30,
+                "dx": -50,
                 "fontSize": 15,
                 "fontStyle": "san-serif"
             },
             "encoding": {
                 "text": {
-                    "field": "USAlabel"
+                    "field": "USAlabelL"
+                },
+                "color": {
+                    "value": "black"
+                }
+            }
+        },
+        {
+            "transform": [
+                {
+                    "filter": "datum.Country == 'United States of America'"
+                },
+                {
+                    "calculate": "'; stable world'",
+                    "as": "USAlabel"
+                },
+                {
+                    "calculate": "split(datum.USAlabel, ';')",
+                    "as": "USAlabelL"
+                }
+            ],
+            "mark": {
+                "type": "text",
+                "align": "left",
+                "baseline": "middle",
+                "dy": 30,
+                "dx": 8,
+                "fontSize": 15,
+                "fontStyle": "san-serif"
+            },
+            "encoding": {
+                "text": {
+                    "field": "USAlabelL"
                 },
                 "color": {
                     "value": "red"
                 }
             }
-            
         },
         {
-            "transform":[
+            "transform": [
                 {
                     "filter": "datum.Country == 'United States of America'"
                 },
                 {
-                    "calculate": "'; in its economics and Life Expectancy. It is ; always the world leader in GDP per Capita.; In ' + year_selected + ' its GDP per Capita had came to '",
+                    "calculate": "';; leading'",
                     "as": "USAlabel"
                 },
                 {
@@ -534,8 +586,72 @@
                 "type": "text",
                 "align": "left",
                 "baseline": "middle",
-                "dy": 100,
-                "dx": -150,
+                "dy": 30,
+                "dx": -50,
+                "fontSize": 15,
+                "fontStyle": "san-serif"
+            },
+            "encoding": {
+                "text": {
+                    "field": "USAlabelL"
+                },
+                "color": {
+                    "value": "red"
+                }
+            }
+        },
+        {
+            "transform": [
+                {
+                    "filter": "datum.Country == 'United States of America'"
+                },
+                {
+                    "calculate": "';; economics. In ' + year_selected + ','",
+                    "as": "USAlabel"
+                },
+                {
+                    "calculate": "split(datum.USAlabel, ';')",
+                    "as": "USAlabelL"
+                }
+            ],
+            "mark": {
+                "type": "text",
+                "align": "left",
+                "baseline": "middle",
+                "dy": 30,
+                "dx": -15,
+                "fontSize": 15,
+                "fontStyle": "san-serif"
+            },
+            "encoding": {
+                "text": {
+                    "field": "USAlabelL"
+                },
+                "color": {
+                    "value": "black"
+                }
+            }
+        },
+        {
+            "transform": [
+                {
+                    "filter": "datum.Country == 'United States of America'"
+                },
+                {
+                    "calculate": "';;; its GDP per Capita had came ; to '",
+                    "as": "USAlabel"
+                },
+                {
+                    "calculate": "split(datum.USAlabel, ';')",
+                    "as": "USAlabelL"
+                }
+            ],
+            "mark": {
+                "type": "text",
+                "align": "left",
+                "baseline": "middle",
+                "dy": 30,
+                "dx": -50,
                 "fontSize": 15,
                 "fontStyle": "san-serif"
             },
@@ -550,7 +666,7 @@
             
         },
         {
-            "transform":[
+            "transform": [
                 {
                     "filter": "datum.Country == 'United States of America'"
                 },
@@ -562,14 +678,13 @@
                     "calculate": "split(datum.USAlabel, ';')",
                     "as": "USAlabelL"
                 }
-                
             ],
             "mark": {
                 "type": "text",
                 "align": "left",
                 "baseline": "middle",
-                "dy": 100,
-                "dx": -150,
+                "dy": 30,
+                "dx": -40,
                 "fontSize": 15,
                 "fontStyle": "san-serif"
             },
@@ -581,10 +696,9 @@
                     "value": "red"
                 }
             }
-            
         },
         {
-            "transform":[
+            "transform": [
                 {
                     "filter": "datum.Country == 'United States of America'"
                 },
@@ -596,14 +710,13 @@
                     "calculate": "split(datum.USAlabel, ';')",
                     "as": "USAlabelL"
                 }
-                
             ],
             "mark": {
                 "type": "text",
                 "align": "left",
                 "baseline": "middle",
-                "dy": 100,
-                "dx": -100,
+                "dy": 30,
+                "dx": 10,
                 "fontSize": 15,
                 "fontStyle": "san-serif"
             },
@@ -615,8 +728,12 @@
                     "value": "black"
                 }
             }
-            
         }
-
-    ]
+    ],
+    "config": {
+        "title": {
+            "font": "sans-serif",
+            "fontSize": 14
+        }
+    }
 }
