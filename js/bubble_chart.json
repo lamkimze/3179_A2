@@ -1,6 +1,6 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "width": 700,
+    "width": 800,
     "height": 500,
     "title": "GDP per Capita vs Life Expectancy",
     "data": {
@@ -81,7 +81,7 @@
                             "Continent"
                         ]
                     },
-                    "bind":"legend"
+                    "bind": "legend"
                 }
             ],
             "encoding": {
@@ -131,7 +131,10 @@
                     }
                 },
                 "opacity": {
-                    "condition":{"param": "continent_filter", "value":0.6},
+                    "condition": {
+                        "param": "continent_filter",
+                        "value": 0.6
+                    },
                     "value": 0
                 },
                 "tooltip": [
@@ -504,7 +507,8 @@
                     "value": "black"
                 }
             }
-        }, {
+        },
+        {
             "transform": [
                 {
                     "filter": "datum.Country == 'United States of America'"
@@ -663,7 +667,6 @@
                     "value": "black"
                 }
             }
-            
         },
         {
             "transform": [
