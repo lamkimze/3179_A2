@@ -32,17 +32,15 @@
   </div>
   <div class="page">
 
-    <!--Chloropleth map-->
-    <center>
-      <div class="pure-g">
-        <div class="pure-u-1-1">
-          <div id="choropleth_map" class="vis-container" class="center"></div>
-        </div>
+    <!-- Chloropleth map -->
+    <div class="pure-g">
+      <div class="pure-u-1-1">
+        <center>
+          <div id="choropleth_map" class="vis-container"></div>
+        </center>
       </div>
-    </center>
+    </div>
     <!--end Chloropleth map-->
-    <br>
-    <br>
     <br>
     <br>
     <br>
@@ -50,7 +48,8 @@
     <!--Description-->
     <div class="pure-g">
       <div class="pure-u-1-1">
-        <div class="description description-right">
+        <div class="description" style="padding-left: 5
+        00;">
           <center>
             <p>The choropleth map shows the GDP per Capita across the world.
               <br>In overall, Americas are doing having the highest GDP per
@@ -65,30 +64,71 @@
               <br>Capita. However, the GDP per Capita around the world are mostly
               <br>having increasing trend which is a good scenario.
             </p>
+          </center>
         </div>
       </div>
-      </center>
     </div>
     <!--end Description-->
+
+    <!-- <stackedbarchart> -->
+    <div class="pure-g">
+      <div class="pure-u-1-2">
+        <center>
+          <div id="stackedbarchart" class="vis-container"></div>
+        </center>
+      </div>
+      <!-- <end stackedbarchart> -->
+      <div class="pure-u-1-2">
+        <div class="description-right">
+          <p>
+            <br> The stacked bar chart showing the GDP Composition
+            <br> of top 10 countries. United States of America is
+            <br> having a substantial lead in total economic output
+            <br> compare to other countries which is more than 2,200
+            <br> trillion USD. China, which ranked 2nd in total
+            <br> economic output only has a total of 1,700 trillion
+            <br> USD which has quite a large gap. However, from the
+            <br> 3rd highest total economic output onwards, the gap
+            <br> tends to be larger. Japan only has a total of 500
+            <br> trillion USD which is more than 4 times lower than
+            <br> US and more than 3 times lower than China.
+            <br>
+            <br> The composition is splitted into 3 main field which
+            <br> are agriculture, industry and services. All the countries
+            <br> are having a similarity, the service fields contribute
+            <br> the most in all countries economic output. Service field
+            <br> occupied the least in China which is about 50%. For other
+            <br> countries, it occupied at least 70% of the economic
+            <br> output.
+          </p>
+        </div>
+      </div>
+    </div>
     <br>
     <br>
+    <br>
+
+    <div class="divider">
+      <h2>GDP and Life Expectancy</h2>
+    </div>
     <br>
     <br>
     <br>
 
     <!-- Scatterplot-->
     <div class="pure-g">
-      <div class="pure-u-1-2">
+      <div class="pure-u-1-1">
         <center>
           <div id="scatterplot" class="vis-container"></div>
         </center>
       </div>
-      <!--end Scatterplot-->
+    </div>
+    <!--end Scatterplot-->
 
-      <!--Description-->
+    <!--Description-->
+    <div class="pure-g">
       <div class="pure-u-1-2">
-        <div class="description description-right">
-          <center>
+        <div class="description">
           <p>
             <br>The scatter plot visualize the relationship of GDP per Capita,
             <br>Life Expectancy and Population. From the plot, it is obvious that
@@ -103,21 +143,65 @@
             <br>Among all the continents, Asia countries are having the most obvious
             <br>increasing trend in life expectancy and GDP per Capita. In 1995, the
             <br>life expectancy and GDP per Capita of almost half of Asia continent
+          </p>
+        </div>
+      </div>
+      <div class="pure-u-1-2">
+        <div class="description">
+          <p>
             <br>only slightly better than Africa. When time increase, the GDP per
-            <br>capita of most Asian countries is already comparable to that of Europe
-            <br>and the United States. Growth was driven by rapid industrialisation,
-            <br>often led by exports and linked with changes in the composition of
-            <br>output and employment. It was supported by coordinated economic
-            <br>policies, unorthodox wherever and whenever necessary, across
-            <br>sectors and over time.
+            <br>capita of most Asian countries is already comparable to that of
+            <br>Europe and the United States. Growth was driven by rapid
+            <br>industrialisation, often led by exports and linked with changes
+            <br>in the composition of output and employment. It was supported by
+            <br>coordinated economic policies, unorthodox wherever and whenever
+            <br>necessary, across sectors and over time.
             <br>
             <br>From 1995, the points started to move from bottom left corner to
-            <br>upper right corner which shows the improve of both GDP per Capita
-            <br>and Life Expectancy of countries. However, there are no obvious
-            <br>relationship of population with life expectancy and GDP per Capita.
-            <br>There are different population across different range of data.
+            <br>upper right corner which shows the improve of both GDP per
+            <br>Capita and Life Expectancy of countries. However, there are no
+            <br>obvious relationship of population with life expectancy and GDP per
+            <br>Capita. There are different population across different range of data.
           </p>
-          </center>
+        </div>
+      </div>
+    </div>
+    <!-- end of description -->
+
+    <!-- Multilinechart-->
+    <div class="pure-g">
+      <div class="pure-u-1-2">
+        <center>
+          <div id="multilinechart" class="vis-container"></div>
+        </center>
+      </div>
+      <!--end Multilinechart-->
+
+      <!-- description -->
+      <div class="pure-u-1-2">
+        <div class="description-right">
+          <p>
+            <br> In overall, the trend of life expectancy are increasing over year.
+            <br> However, the increasing trend varies among different continent.
+            <br> Africa is having the lowest life expectancy compared with other 
+            <br> continent. It is the only continent that the life expectancy is 
+            <br> always lower than 65 years. However, their life expectancy is 
+            <br> growing rapidly. Its live expectancy increase from 55 in 2000 to
+            <br> 63 in 2015 which is also the peak. The significant improve in life 
+            <br> expectancy in Africa may mainly due to the improvement in health
+            <br> service. There are large variety of diseases spreading in Africa
+            <br> in past. The improvement in health service helps in protect them
+            <br> and cure the diseases. However, the life expectancy of Africa is 
+            <br> the lowest compared with other continent.
+            <br>
+            <br> The improvement in life expectancy in other areas, as observed in 
+            <br> the chart, is relatively gradual and modest, with most continents 
+            <br> experiencing an increase of only 2 to 5 years over time. This 
+            <br> suggests that life expectancy has been improving steadily but at 
+            <br> a relatively slow pace in these regions. This might due to these 
+            <br> area had reached a stable developing stage in which the economic,
+            <br> health care and demographic changes are already quite comprehensive.
+          </p>
         </div>
       </div>
     </div>
@@ -125,29 +209,27 @@
     <br>
     <br>
     <br>
-
-    <center>
-      <div class="pure-g">
-        <div class="pure-u-2-3">
-          <div id="stackedbarchart" class="vis-container" class="center"></div>
-        </div>
-      </div>
-    </center>
-
+    <br>
+    <br>
     <!--end Description-->
 
     <div class="divider">
       <h2>What Influence the Economic? </h2>
     </div>
-    
-        <script type="text/javascript">
-          var spec1 = "../js/improved_choropleth_map.vg.json";
-          var spec2 = "../js/bubble_chart.json";
-          var spec3 = "../js/stacked_barchart.json";
-          vegaEmbed('#choropleth_map', spec1).then(function (result) { }).catch(console.error);
-          vegaEmbed('#scatterplot', spec2).then(function (result) { }).catch(console.error);
-          vegaEmbed('#stackedbarchart', spec3).then(function (result) { }).catch(console.error);
-        </script>
+    <br>
+    <br>
+    <br>
+
+    <script type="text/javascript">
+      var spec1 = "../js/choropleth_map.vg.json";
+      var spec2 = "../js/bubble_chart.json";
+      var spec3 = "../js/stacked_barchart.json";
+      var spec4 = "../js/multilines_chart.json";
+      vegaEmbed('#choropleth_map', spec1).then(function (result) { }).catch(console.error);
+      vegaEmbed('#scatterplot', spec2).then(function (result) { }).catch(console.error);
+      vegaEmbed('#stackedbarchart', spec3).then(function (result) { }).catch(console.error);
+      vegaEmbed('#multilinechart', spec4).then(function (result) { }).catch(console.error);      
+    </script>
 </body>
 
 </html>
