@@ -1,0 +1,84 @@
+/* Use class name  */
+.header {
+  padding: 20px;
+  /* some padding */
+  text-align: center;
+  /* center the text */
+  background: #fda400;
+  color: black;
+  /* black text color */
+}
+
+/* Increase the font size of the <h1> element */
+.header h1 {
+  font-family:'Franklin Gothic Medium';
+  font-size: 40px;
+  width: 100%;
+}
+
+.description{
+  font-family:'Gill Sans MT';
+  font-size: 20px;
+  /* width: 100%; */
+  padding-left: 100px;
+  text-align: left;
+}
+
+.description-right{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+  /* width: 100%; */
+  padding-left: 102px;
+  padding-top: 30px;
+  text-align: left;
+}
+
+.divider {
+  margin: auto;
+  background: #ffc862;
+  font-size: large;
+  padding: 10px;
+  text-align: center;
+}
+
+#choropleth_map {
+  size-adjust: 100%;
+  align-self: center;
+  top: 50px;
+  left: 60px;
+  /* right: 100px; */
+
+}
+
+#stackedbarchart {
+  size-adjust: 100%;
+  align-self: center;
+  top: 50px;
+  left: 60px;
+  /* right: 100px; */
+
+}
+
+#multilinechart {
+  size-adjust: 100%;
+  align-self: center;
+  top: 50px;
+  left: 60px;
+  /* right: 100px; */
+
+}
+
+.text{
+  text-align: left;
+  font-size: larger;
+  color: black;
+
+}
+
+.center {
+  display: block;
+  margin-right: -10px;
+  width: 50%;
+  padding: 10px;
+  margin: auto;
+}
