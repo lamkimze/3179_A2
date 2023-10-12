@@ -1,0 +1,201 @@
+Country,Field,Composition,GDP (T)
+Argentina,Agriculture,7.1,0.5
+Argentina,Industry,23.6,0.5
+Argentina,Other,16.8,0.5
+Argentina,Services,52.5,0.5
+Australia,Agriculture,2.3,1.6
+Australia,Industry,25.5,1.6
+Australia,Other,6.5,1.6
+Australia,Services,65.7,1.6
+Austria,Agriculture,1.2,0.5
+Austria,Industry,25.8,0.5
+Austria,Other,10.5,0.5
+Austria,Services,62.4,0.5
+Bangladesh,Agriculture,11.6,0.4
+Bangladesh,Industry,33.3,0.4
+Bangladesh,Other,3.7,0.4
+Bangladesh,Services,51.3,0.4
+Belgium,Agriculture,0.7,0.6
+Belgium,Industry,19.6,0.6
+Belgium,Other,10.9,0.6
+Belgium,Services,68.8,0.6
+Brazil,Agriculture,7.5,1.6
+Brazil,Industry,20.2,1.6
+Brazil,Other,14.6,1.6
+Brazil,Services,57.8,1.6
+Canada,Agriculture,1.7,2
+Canada,Industry,24.1,2
+Canada,Other,6.6,2
+Canada,Services,67.7,2
+Chile,Agriculture,3.6,0.3
+Chile,Industry,31.3,0.3
+Chile,Other,10.6,0.3
+Chile,Services,54.4,0.3
+China,Agriculture,7.2,16.9
+China,Industry,39.3,16.9
+China,Other,0,16.9
+China,Services,53.5,16.9
+Colombia,Agriculture,7.6,0.3
+Colombia,Industry,24.9,0.3
+Colombia,Other,9.5,0.3
+Colombia,Services,58,0.3
+Czechia,Agriculture,1.8,0.3
+Czechia,Industry,30.3,0.3
+Czechia,Other,9.1,0.3
+Czechia,Services,58.8,0.3
+Denmark,Agriculture,0.9,0.4
+Denmark,Industry,19.3,0.4
+Denmark,Other,13.1,0.4
+Denmark,Services,66.7,0.4
+Egypt,Agriculture,11.4,0.4
+Egypt,Industry,31.2,0.4
+Egypt,Other,4.9,0.4
+Egypt,Services,52.5,0.4
+Finland,Agriculture,2.3,0.3
+Finland,Industry,24.1,0.3
+Finland,Other,13.4,0.3
+Finland,Services,60.3,0.3
+France,Agriculture,1.6,2.9
+France,Industry,16.7,2.9
+France,Other,11.4,2.9
+France,Services,70.3,2.9
+Germany,Agriculture,0.9,4.2
+Germany,Industry,26.7,4.2
+Germany,Other,9.5,4.2
+Germany,Services,62.9,4.2
+Hong Kong,Agriculture,0.1,0.4
+Hong Kong,Industry,6,0.4
+Hong Kong,Other,4.3,0.4
+Hong Kong,Services,89.7,0.4
+India,Agriculture,17.3,2.9
+India,Industry,26.1,2.9
+India,Other,8.7,2.9
+India,Services,47.9,2.9
+Indonesia,Agriculture,13.3,1.2
+Indonesia,Industry,39.8,1.2
+Indonesia,Other,4.1,1.2
+Indonesia,Services,42.8,1.2
+Iran,Agriculture,12.4,1.1
+Iran,Industry,38,1.1
+Iran,Other,2.3,1.1
+Iran,Services,47.3,1.1
+Ireland,Agriculture,1,0.5
+Ireland,Industry,37.8,0.5
+Ireland,Other,5.8,0.5
+Ireland,Services,55.4,0.5
+Israel,Agriculture,1.3,0.5
+Israel,Industry,17.2,0.5
+Israel,Other,9.1,0.5
+Israel,Services,72.4,0.5
+Italy,Agriculture,1.9,2.1
+Italy,Industry,22.7,2.1
+Italy,Other,10.4,2.1
+Italy,Services,65,2.1
+Japan,Agriculture,1,5.1
+Japan,Industry,28.8,5.1
+Japan,Other,0.4,5.1
+Japan,Services,69.9,5.1
+Malaysia,Agriculture,9.6,0.4
+Malaysia,Industry,37.8,0.4
+Malaysia,Other,1.1,0.4
+Malaysia,Services,51.6,0.4
+Mexico,Agriculture,3.9,1.3
+Mexico,Industry,30.8,1.3
+Mexico,Other,6.1,1.3
+Mexico,Services,59.2,1.3
+Netherlands,Agriculture,1.5,1
+Netherlands,Industry,17.9,1
+Netherlands,Other,11.2,1
+Netherlands,Services,69.4,1
+New Zealand,Agriculture,5.7,0.2
+New Zealand,Industry,20.4,0.2
+New Zealand,Other,8.4,0.2
+New Zealand,Services,65.6,0.2
+Nigeria,Agriculture,23.4,0.5
+Nigeria,Industry,31.4,0.5
+Nigeria,Other,1.4,0.5
+Nigeria,Services,43.8,0.5
+Norway,Agriculture,1.7,0.4
+Norway,Industry,36.3,0.4
+Norway,Other,10.2,0.4
+Norway,Services,51.8,0.4
+Pakistan,Agriculture,22.7,0.3
+Pakistan,Industry,18.8,0.3
+Pakistan,Other,6.4,0.3
+Pakistan,Services,52.1,0.3
+Philippines,Agriculture,10.1,0.4
+Philippines,Industry,28.9,0.4
+Philippines,Other,0,0.4
+Philippines,Services,61,0.4
+Poland,Agriculture,2.2,0.7
+Poland,Industry,27.9,0.7
+Poland,Other,13,0.7
+Poland,Services,56.9,0.7
+Portugal,Agriculture,2.2,0.3
+Portugal,Industry,19.6,0.3
+Portugal,Other,13.5,0.3
+Portugal,Services,64.7,0.3
+Romania,Agriculture,4.5,0.3
+Romania,Industry,26.7,0.3
+Romania,Other,9.6,0.3
+Romania,Services,59.1,0.3
+Russia,Agriculture,3.9,1.6
+Russia,Industry,31.8,1.6
+Russia,Other,10.3,1.6
+Russia,Services,54.1,1.6
+Saudi Arabia,Agriculture,2.7,0.8
+Saudi Arabia,Industry,44.7,0.8
+Saudi Arabia,Other,6.1,0.8
+Saudi Arabia,Services,46.5,0.8
+Singapore,Agriculture,0,0.4
+Singapore,Industry,24.4,0.4
+Singapore,Other,5.3,0.4
+Singapore,Services,70.3,0.4
+South Africa,Agriculture,2.5,0.4
+South Africa,Industry,24.5,0.4
+South Africa,Other,10,0.4
+South Africa,Services,63,0.4
+South Korea,Agriculture,1.8,1.8
+South Korea,Industry,32.4,1.8
+South Korea,Other,8.8,1.8
+South Korea,Services,57,1.8
+Spain,Agriculture,2.6,1.4
+Spain,Industry,20.4,1.4
+Spain,Other,9.6,1.4
+Spain,Services,67.4,1.4
+Sweden,Agriculture,1.3,0.6
+Sweden,Industry,22.5,0.6
+Sweden,Other,11.3,0.6
+Sweden,Services,65,0.6
+Switzerland,Agriculture,0.6,0.8
+Switzerland,Industry,24.6,0.8
+Switzerland,Other,2.8,0.8
+Switzerland,Services,71.9,0.8
+Taiwan,Agriculture,1.5,0.8
+Taiwan,Industry,38,0.8
+Taiwan,Other,0,0.8
+Taiwan,Services,60.6,0.8
+Thailand,Agriculture,8.7,0.5
+Thailand,Industry,35,0.5
+Thailand,Other,0,0.5
+Thailand,Services,56.3,0.5
+Turkiye,Agriculture,5.5,0.8
+Turkiye,Industry,31.1,0.8
+Turkiye,Other,10.6,0.8
+Turkiye,Services,52.8,0.8
+U.A.E.,Agriculture,0.9,0.4
+U.A.E.,Industry,47.5,0.4
+U.A.E.,Other,0,0.4
+U.A.E.,Services,51.6,0.4
+U.S.,Agriculture,1,22.9
+U.S.,Industry,17.9,22.9
+U.S.,Other,3.6,22.9
+U.S.,Services,77.6,22.9
+UK,Agriculture,0.7,3.1
+UK,Industry,17.3,3.1
+UK,Other,10.4,3.1
+UK,Services,71.6,3.1
+Vietnam,Agriculture,12.6,0.4
+Vietnam,Industry,37.5,0.4
+Vietnam,Other,8.8,0.4
+Vietnam,Services,41.2,0.4
