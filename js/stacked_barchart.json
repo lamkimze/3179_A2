@@ -90,5 +90,11 @@
                 "title": "GDP (Trillion USD$)"
             }
         ]
+    },
+    "config": {
+        "title": {
+            "font": "sans-serif",
+            "fontSize": 14
+        }
     }
 }
