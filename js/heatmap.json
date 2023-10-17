@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "data": {
-    "url": "../data/country_expenses.csv"
+    "url": "https://raw.githubusercontent.com/lamkimze/3179_A2/main/data/country_expenses.csv"
   },
   "title": "Country Investment by Sector",
   "mark": "rect",
