@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "data": {
-    "url": "/data/unemployment_vs_gdp_growth.csv"
+    "url": "https://raw.githubusercontent.com/lamkimze/3179_A2/main/data/Unemployment_vs_gdp_growth.csv"
   },
   "title": "Unemployment Rate Changes over Time",
   "width": 800,
