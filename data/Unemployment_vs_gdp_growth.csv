@@ -1,0 +1,91 @@
+Continent,Year,unemployment_rate,GDP_growth,unemployment_change
+Africa,start,11.43,5.45,11.43
+Asia,start,7.68,6.65,7.68
+Europe,start,10.85,1.8,10.85
+North America,start,9.64,1.08,9.64
+Oceania,start,6.17,2.58,6.17
+South America,start,7.33,6.58,7.33
+Africa,2011,11.47,2.93,0.04
+Asia,2011,7.2,6.26,-0.48
+Europe,2011,10.78,1.76,-0.06
+North America,2011,9.28,2.44,-0.36
+Oceania,2011,6.1,3.54,-0.07
+South America,2011,6.83,5.75,-0.5
+Africa,2012,12.81,6.41,1.34
+Asia,2012,6.93,5.1,-0.26
+Europe,2012,11.25,-0.16,0.47
+North America,2012,8.84,2.18,-0.44
+Oceania,2012,6.17,0.98,0.07
+South America,2012,6.44,3.48,-0.39
+Africa,2013,12.83,3.72,0.01
+Asia,2013,6.88,4.86,-0.05
+Europe,2013,11.38,0.89,0.13
+North America,2013,8.5,2.25,-0.34
+Oceania,2013,5.97,1.95,-0.2
+South America,2013,6.25,4.63,-0.19
+Africa,2014,13.54,3.85,0.71
+Asia,2014,6.83,4.38,-0.05
+Europe,2014,10.81,1.86,-0.57
+North America,2014,8.57,3.09,0.07
+Oceania,2014,5.9,2.62,-0.07
+South America,2014,6.19,2.41,-0.06
+Africa,2015,13.23,2.37,-0.31
+Asia,2015,6.79,3.91,-0.04
+Europe,2015,10.11,2.68,-0.7
+North America,2015,7.99,2.59,-0.59
+Oceania,2015,5.67,4.6,-0.23
+South America,2015,6.64,1.22,0.45
+Africa,2016,13.49,2.84,0.26
+Asia,2016,6.68,4.23,-0.11
+Europe,2016,9.2,2.56,-0.91
+North America,2016,7.64,2.35,-0.34
+Oceania,2016,5.47,3.7,-0.2
+South America,2016,7.69,0.95,1.05
+Africa,2017,13.11,3.94,-0.37
+Asia,2017,6.55,3.89,-0.13
+Europe,2017,8.16,3.43,-1.04
+North America,2017,7.18,1.65,-0.46
+Oceania,2017,4.97,2.69,-0.5
+South America,2017,7.56,2.53,-0.13
+Africa,2018,12.73,3.65,-0.39
+Asia,2018,6.49,3.83,-0.06
+Europe,2018,7.16,3.3,-1
+North America,2018,7.19,2.27,0.01
+Oceania,2018,4.7,2.22,-0.27
+South America,2018,7.79,2.55,0.23
+Africa,2019,12.4,3.26,-0.33
+Asia,2019,6.44,3.09,-0.05
+Europe,2019,6.53,2.85,-0.64
+North America,2019,7.02,1.6,-0.17
+Oceania,2019,4.6,3.35,-0.1
+South America,2019,7.96,1.3,0.17
+Africa,2020,13.84,-2.65,1.44
+Asia,2020,7.34,-4.21,0.9
+Europe,2020,7.13,-4.76,0.6
+North America,2020,12.09,-10.69,5.06
+Oceania,2020,8.17,-4.07,3.57
+South America,2020,10.87,-3.05,2.91
+Africa,2021,14.69,4.73,0.84
+Asia,2021,7.05,4.62,-0.29
+Europe,2021,6.9,7.05,-0.23
+North America,2021,9.61,7.73,-2.48
+Oceania,2021,5.97,-0.63,-2.2
+South America,2021,9.46,8.06,-1.41
+Africa,2022,14.84,4.12,0.16
+Asia,2022,6.23,4.8,-0.82
+Europe,2022,6.39,2.72,-0.51
+North America,2022,7.09,6.2,-2.51
+Oceania,2022,4.5,1.23,-1.47
+South America,2022,7.65,8.64,-1.81
+Africa,2023,16.69,3.35,1.84
+Asia,2023,6.17,3.15,-0.05
+Europe,2023,6.27,1.45,-0.12
+North America,2023,6.7,3.22,-0.39
+Oceania,2023,4.33,3.15,-0.17
+South America,2023,7.65,4.71,0
+Africa,end,0,0,0
+Asia,end,0,0,0
+Europe,end,0,0,0
+North America,end,0,0,0
+Oceania,end,0,0,0
+South America,end,0,0,0

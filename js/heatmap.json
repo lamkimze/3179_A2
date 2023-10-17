@@ -1,0 +1,150 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "../data/country_expenses.csv"
+  },
+  "title": "Country Investment by Sector",
+  "mark": "rect",
+  "width": 250,
+  "height": 250,
+  "params": [
+    {
+      "name": "year_selected",
+      "value": 2000,
+      "bind": {
+        "input": "range",
+        "min": 2000,
+        "max": 2021,
+        "step": 1,
+        "name": "Year: "
+      }
+    },
+    {
+      "name": "Country_c1",
+      "value": "World",
+      "bind": {
+        "input": "select",
+        "options": [
+          "World",
+          "Australia",
+          "Spain",
+          "Estonia",
+          "Finlans",
+          "France",
+          "United Kingdom",
+          "Italy"
+        ],
+        "name": "Country comparison 1:  "
+      }
+    },
+    {
+      "name": "Country_c2",
+      "value": "United States",
+      "bind": {
+        "input": "select",
+        "options": [
+          "United States",
+          "Poland",
+          "Korea",
+          "Sweden",
+          "Ireland"
+        ],
+        "name": "Country comparison 2: "
+      }
+    },
+    {"name":"highlight", "select": "point"}
+  ],
+  "transform": [
+    {
+      "filter": "datum.subject != 'Social protection'"
+    },
+    {
+      "filter": "datum.subject != 'Total'"
+    },
+    {
+      "filter": "datum['time'] == year_selected"
+    },
+    {
+      "filter": "datum['location'] == Country_c1 || datum['location'] == Country_c2 || Country_c2 == 'World' || Country_c1 == 'World'"
+    }
+  ],
+  "encoding": {
+    "y": {
+      "field": "subject",
+      "type": "ordinal",
+      "title": "Investment Sector"
+    },
+    "x": {
+      "field": "location",
+      "type": "ordinal",
+      "title": "Country"
+    },
+    "color": {
+      "aggregate": "mean",
+      "field": "value",
+      "title": "USD (Billion)",
+      "scale": {
+        "domain": [
+          0,
+          10
+        ],
+        "range":[
+          "#f7fbff",
+          "#0047AB"
+        ]
+      }
+    },
+    "stroke":{
+      "condition":{
+        "param": "highlight",
+        "empty": false,
+        "value": "black"
+
+      },
+      "value": null
+    },
+    "opacity":{
+      "condition":{
+        "param": "highlight",
+        "empty": true,
+        "value": 1
+
+      },
+      "value": 0.3
+    },
+    "tooltip": [
+      {
+        "format": {
+          "fontWeight": "bold"
+        }
+      },
+      {
+        "field": "subject",
+        "type": "nominal",
+        "title": "Subject"
+      },
+      {
+        "field": "location",
+        "type": "nominal",
+        "title": "Country"
+      },
+      {
+        "field": "value",
+        "type": "quantitative",
+        "title": "Value",
+        "format": ".2s"
+      }
+    ]
+  },
+  "config": {
+    "axis": {
+      "grid": true,
+      "tickBand": "extent"
+    },
+    "title": {
+      "font": "sans-serif",
+      "fontSize": 14
+    },
+    "background": "transparent"
+  }
+}
