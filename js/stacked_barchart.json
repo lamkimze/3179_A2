@@ -46,12 +46,14 @@
       "filter": "datum.ranking <= 40"
     }
   ],
+  
   "mark": "bar",
   "encoding": {
     "x": {
       "field": "Country",
       "type": "nominal",
-      "title": "Country"
+      "title": "Country",
+      "sort":"-y"
     },
     "y": {
       "field": "formatted_composition",
@@ -65,6 +67,7 @@
         ]
       }
     },
+
     "color": {
       "field": "Field",
       "type": "nominal",
@@ -108,8 +111,10 @@
         "type": "quantitative",
         "title": "GDP (T)"
       }
+
     ]
   },
+
   "config": {
     "title": {
       "font": "sans-serif",
