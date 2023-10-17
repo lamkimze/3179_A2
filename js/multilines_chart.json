@@ -53,6 +53,7 @@
             ]
           }
         },
+        "opacity": {"value": 0.6},
         "y": {
           "field": "meanLife_Expectancy",
           "type": "quantitative",
